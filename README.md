@@ -9,7 +9,7 @@ The user will hit the arrow keys to maneuver Frogger across the game board.
 The game will signal a win when all three frogs reach their lilypads, and will signal a loss if they get hit by a car or obstacle or fall in the water.
 
 
-###** Tech Stack: **
+# # # ** Tech Stack: **
 * HTML
 * CSS
 * Javascript with DOM events
