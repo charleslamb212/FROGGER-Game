@@ -14,13 +14,13 @@ The game will signal a win when all three frogs reach their lilypads, and will s
 * CSS
 * Javascript with DOM events
 
-###** MVP **
+ MVP 
 * Render a game board with different moving obstacles (cars, etc)
 * Set the board up so if the frog is hit or falls in the water, he loses a frog.
 * Set the winning conditions to crossing the board to the lily pads.
 * Create a game refresh button without reloading entire page/
 
-####**Stretch Goals**
+Stretch Goals
 *If user wins, speed up moving car intervals for next round.
 *Attempt using canvas to add aesthetics to the board.
 
