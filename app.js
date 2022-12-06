@@ -35,9 +35,9 @@ function moveFrogger(e) {
 
   squares[currentIndex].classList.add("frogger");
 }
-
+squares[76].classList.add("frogger")
 document.addEventListener("keyup", moveFrogger);
-
+//move function 
 function move() {
   leftLogs.forEach((leftLog) => moveLeftLog(leftLog));
   rightLogs.forEach((rightLog) => moveRightLog(rightLog));
@@ -121,14 +121,14 @@ function moveRightCar(rightCar) {
     rightCar.classList.add("c1");
   }
 }
-
+//piping in the if statement checks if anyof these conditions are true, and if so, triggers the timer to stop and thus ending the game.
 function gameOver() {
   timer--;
   time.textContent = timer;
   if (
     squares[currentIndex].classList.contains("l4") ||
     squares[currentIndex].classList.contains("l5") ||
-    squares[currentIndex].classList.contains("c2") ||
+    squares[currentIndex].classList.contains("c1") ||
     squares[currentIndex].classList.contains("l3") ||
     timer === 0
   ) {
@@ -146,7 +146,23 @@ function winOrLose() {
 }
 
 let timerId = setInterval(gameOver, 1000);
-
+function reset() {
+  squares.forEach(square => {
+    square.classList.remove("frogger")
+  })
+   timer = 50;
+   currentIndex = 76;
+   console.log(currentIndex)
+   width = 9;
+   squares[76].classList.add("frogger")
+   
+   timerId = setInterval(gameOver, 1000);
+   moving = setInterval(move, 1000);
+}
+document.querySelector(".btn").addEventListener('click', e => {
+  e.preventDefault()
+  reset()
+})
 function checkWin() {
   if (endingBlock.classList.contains("frogger")) {
     // if(squares[currentIndex].classList.contains('ending-block')) {

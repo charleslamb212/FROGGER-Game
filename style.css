@@ -30,7 +30,8 @@ body {
 } */
 
 .starting-block {
-  background-image: url("https://www.goodfreephotos.com/albums/other-photos/backgrounds/green-grass-background.jpg");
+  /* background-image: url("https://www.goodfreephotos.com/albums/other-photos/backgrounds/green-grass-background.jpg"); */
+  z-index: 5;
 }
 
 .ending-block {
@@ -58,4 +59,12 @@ body {
 
 .frogger {
   background-image: url("./images/frogger.png");
+  z-index: 10;
+}
+
+.btn {
+  border: 1px solid black;
+  cursor: pointer;
+  width: 50px;
+
 }
