@@ -2,6 +2,12 @@ body {
   background-color: rgba(86, 86, 150, 0.719);
 }
 
+
+h1 {
+  height: 127px;
+  background-image: url("./images/Frogger-Logo-60108954.png");
+  max-width: 100%;
+}
 .board {
   width: 600px;
   height: 600px;
@@ -42,7 +48,7 @@ body {
 .l2,
 .l3 {
   background-color: brown;
-  background-image: url("./images/froggerlog.png");
+  background-image: url("./images/froggerlog\ \(2\).png");
 }
 .l4,
 .l5 {
@@ -50,7 +56,7 @@ body {
 }
 
 .c1 {
-  background-image: url("./images/frogger\ car.png");
+  background-image: url("./images/frogger_car-removebg-preview\ \(1\).png");
 }
 .c2,
 .c3 {
@@ -58,7 +64,7 @@ body {
 }
 
 .frogger {
-  background-image: url("./images/frogger.png");
+  background-image: url("./images/pngwing.com.png");
   z-index: 10;
 }
 
@@ -67,4 +73,10 @@ body {
   cursor: pointer;
   width: 50px;
 
+}
+
+footer {
+  height: 127px;
+  background-image: url("./images/Frogger-Logo-60108954.png");
+  max-width: 100%;
 }
