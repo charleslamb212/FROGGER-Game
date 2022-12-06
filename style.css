@@ -1,1 +1,61 @@
+body {
+  background-color: rgba(86, 86, 150, 0.719);
+}
 
+.board {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 300px;
+  border: 5px solid black;
+  background-image: url("https://www.goodfreephotos.com/albums/other-photos/backgrounds/green-grass-background.jpg");
+}
+
+.board div {
+  width: 65px;
+  height: 65px;
+}
+
+/* .left-log, 
+.right-log {
+  background-color: aqua;
+} */
+
+/* .right-car,
+.left-car {
+  background-color: rgb(101, 99, 99);
+
+} */
+
+.starting-block {
+  background-image: url("https://www.goodfreephotos.com/albums/other-photos/backgrounds/green-grass-background.jpg");
+}
+
+.ending-block {
+  background-image: url("./images/froggerlilypadpng.png");
+}
+
+.l1,
+.l2,
+.l3 {
+  background-color: brown;
+  background-image: url("./images/froggerlog.png");
+}
+.l4,
+.l5 {
+  background-image: url("./images/frogwaterjpg.jpg");
+}
+
+.c1 {
+  background-image: url("./images/frogger\ car.png");
+}
+.c2,
+.c3 {
+  background-image: url("./images/c92b5d89eb53814b63a889b8dac77ee2.png");
+}
+
+.frogger {
+  background-image: url("./images/frogger.png");
+}
