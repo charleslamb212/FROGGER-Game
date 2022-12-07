@@ -6,7 +6,7 @@ The rules of this game are simple: do not let the frogger perish in either of th
 
  It is a one player game against the computer in that the cars and logs and turtles will be constantly flowing across the screen.
 The user will hit the arrow keys to maneuver Frogger across the game board.
-The game will signal a win when all three frogs reach their lilypads, and will signal a loss if they get hit by a car or obstacle or fall in the water.
+The game will signal a win when lilypads are reached, and will signal a loss if they get hit by an obstacle or fall in the water.
 
 
 ## Tech Stack: 
@@ -16,17 +16,18 @@ The game will signal a win when all three frogs reach their lilypads, and will s
 
  ## MVP 
 * Render a game board with different moving obstacles (cars, etc)
-* Set the board up so if the frog is hit or falls in the water, he loses a frog.
+* Set the board up so if the frog is hit or falls in the water, he dies and the game is over.
 * Set the winning conditions to crossing the board to the lily pads.
 * Create a game refresh button without reloading entire page/
 
 ## Stretch Goals
 *If user wins, speed up moving car intervals for next round.
 *Attempt using canvas to add aesthetics to the board.
+*Add audio to increase engagement.
 
 ## Potential Roadblocks 
-* Looping th motion of moving obstacles on the board correctly.
-* Enabling user having accurate controls; button assignment). 
+* Looping the motion of moving obstacles on the board correctly.
+* Enabling user having accurate controls to mimic original game; button assignment. 
 
 
 
