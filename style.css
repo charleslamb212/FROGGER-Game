@@ -9,8 +9,23 @@ h1 {
   background-image: url("./images/Frogger-Logo-60108954.png");
   max-width: 100%;
 }
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: yellow;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  max-width: 150px;
+  min-width: 100px;
+  font-size: 15px;
+}
 .board {
-  width: 600px;
+  width: 585px;
   height: 600px;
   display: flex;
   justify-content: center;
@@ -34,6 +49,11 @@ h1 {
 .end {
   border-radius: 30px;
   background-image: url("./images/froggerlilypadpng.png");
+}
+
+.dock {
+  border-radius: 10% / 50%;
+  background-image: url(./images/painting_wood_paneling_x1-309957.jpg);
 }
 
 .a1,
@@ -68,6 +88,7 @@ h1 {
   border: 1px solid black;
   cursor: pointer;
   width: 70px;
+  height: 70PX;
   background-color: coral;
 
 }
