@@ -9,7 +9,7 @@ let currentIndex = 76;
 //currentIndex is the starting div (76th div)
 let width = 9;
 //game board width is 9 squares
-//DOM elements
+//DOM selectors
 let leftLogs = document.querySelectorAll(".left-log");
 let rightLogs = document.querySelectorAll(".right-log");
 let leftCar = document.querySelectorAll(".left-car");
@@ -148,7 +148,7 @@ function winOrLose() {
   gameOver();
   win();
 }
-// reset button 
+// reset button
 let timerId = setInterval(gameOver, 3000);
 function reset() {
   squares.forEach((square) => {
@@ -158,10 +158,10 @@ function reset() {
   currentIndex = 76;
   console.log(currentIndex);
   width = 9;
-  result.textContent = ""
+  result.textContent = "";
   squares[76].classList.add("frogger");
-  clearInterval(timerId) // clearing timerinterval, ndthen setting a new one after reset
-  clearInterval(moving)
+  clearInterval(timerId); // clearing timerinterval, ndthen setting a new one after reset
+  clearInterval(moving);
   timerId = setInterval(gameOver, 1000);
   moving = setInterval(move, 1000);
 }
@@ -170,15 +170,14 @@ document.querySelector(".btn").addEventListener("click", (e) => {
   reset();
 });
 function checkWin() {
-    endDivs.forEach(div => {
-      if(div.classList.contains("frogger")) {
-        result.textContent = "You Win!"
-        clearInterval(timerId)
-        clearInterval(moving)
-      }
-    }) 
-  
-  
+  endDivs.forEach((div) => {
+    if (div.classList.contains("frogger")) {
+      result.textContent = "You Win!";
+      clearInterval(timerId);
+      clearInterval(moving);
+    }
+  });
+
   // // if (endDiv.classList.contains("frogger")) {
   //   // if(squares[currentIndex].classList.contains('endingDiv')) {
   //   //alert('You Won!!')
