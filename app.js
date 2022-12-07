@@ -14,7 +14,7 @@ let leftLogs = document.querySelectorAll(".left-log");
 let rightLogs = document.querySelectorAll(".right-log");
 let leftCar = document.querySelectorAll(".left-car");
 let rightCar = document.querySelectorAll(".right-car");
-let endDiv = document.querySelector(".end");
+let endDivs = document.querySelectorAll(".end");
 //assign functionality to the arrow keys with below statements
 function moveFrogger(e) {
   squares[currentIndex].classList.remove("frogger");
@@ -48,7 +48,7 @@ function move() {
   rightCar.forEach((rightCar) => moveRightCar(rightCar));
   checkWin();
 }
-// replicate moving logs and cars by checking to see if it contains the assigned class, if so, remove the current div andmove on to the next div, and keep going until you are back at one.
+// replicate moving logs and cars by checking to see if it contains the assigned class, if so, remove the current div and move on to the next div, and keep going until you are back at one.
 function moveLeftLog(leftLog) {
   if (leftLog.classList.contains("a1")) {
     leftLog.classList.remove("a1");
@@ -86,7 +86,7 @@ function moveRightLog(rightLog) {
     rightLog.classList.add("a4");
   }
 }
-// the same thought process to create the loop
+// the same thought process to create the loop for the cars
 function moveLeftCar(leftCar) {
   if (leftCar.classList.contains("b1")) {
     leftCar.classList.remove("b1");
@@ -124,7 +124,7 @@ function moveRightCar(rightCar) {
     rightCar.classList.add("b1");
   }
 }
-//piping in the if statement checks if anyof these conditions are true, and if so, triggers the timer to stop and thus ending the game.
+//piping in the if statement checks if any of these conditions are true, and if so, triggers the timer to stop and thus ending the game.
 function gameOver() {
   timer--;
   time.textContent = timer;
@@ -142,14 +142,14 @@ function gameOver() {
     clearInterval(timerId);
   }
 }
-let moving = setInterval(move, 800);
-
+let moving = setInterval(move, 1000);
+//game loop interval
 function winOrLose() {
   gameOver();
   win();
 }
-
-let timerId = setInterval(gameOver, 1000);
+// reset button 
+let timerId = setInterval(gameOver, 3000);
 function reset() {
   squares.forEach((square) => {
     square.classList.remove("frogger");
@@ -158,8 +158,10 @@ function reset() {
   currentIndex = 76;
   console.log(currentIndex);
   width = 9;
+  result.textContent = ""
   squares[76].classList.add("frogger");
-
+  clearInterval(timerId) // clearing timerinterval, ndthen setting a new one after reset
+  clearInterval(moving)
   timerId = setInterval(gameOver, 1000);
   moving = setInterval(move, 1000);
 }
@@ -168,10 +170,19 @@ document.querySelector(".btn").addEventListener("click", (e) => {
   reset();
 });
 function checkWin() {
-  if (endDiv.classList.contains("frogger")) {
-    // if(squares[currentIndex].classList.contains('endingDiv')) {
-    //alert('You Won!!')
-    console.log("You win");
-    result.textContent = "You Win!!!";
-  }
+    endDivs.forEach(div => {
+      if(div.classList.contains("frogger")) {
+        result.textContent = "You Win!"
+        clearInterval(timerId)
+        clearInterval(moving)
+      }
+    }) 
+  
+  
+  // // if (endDiv.classList.contains("frogger")) {
+  //   // if(squares[currentIndex].classList.contains('endingDiv')) {
+  //   //alert('You Won!!')
+  //   console.log("You win");
+  //   result.textContent = "You Win!!!";
+  // }
 }
