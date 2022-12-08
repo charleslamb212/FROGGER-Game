@@ -38,3 +38,11 @@ The game will signal a win when lilypads are reached, and will signal a loss if 
 
 
 ![Screen Shot 2022-11-30 at 10 47 52 PM](https://user-images.githubusercontent.com/117604017/204984830-1d289abe-3541-4a8f-8fe3-b07fdb197a7e.png)
+
+## Sources
+* canvas crawler class lesson
+* MDN
+* www.geeksforgeeks.org/how-to-create-a-moving-div-using-javascript
+* https://www.youtube.com/@Frankslaboratory
+* Office hours 
+
