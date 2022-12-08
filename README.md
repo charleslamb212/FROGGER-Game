@@ -24,8 +24,10 @@ The game will signal a win when lilypads are reached, and will signal a loss if 
 
 ## Potential Roadblocks 
 * Looping the motion of moving obstacles on the board correctly.
-* Enabling user having accurate controls to mimic original game; button assignment. 
+* Collision detection algorithm. 
 
+## Post Project Reflection
+* Keep things as simple as possible and make a list of needed functionality is the best practice.  I started over and had to simplify.
 
 
 
