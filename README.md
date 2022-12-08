@@ -21,9 +21,9 @@ The game will signal a win when lilypads are reached, and will signal a loss if 
 * Create a game refresh button without reloading entire page/
 
 ## Stretch Goals
-*If user wins, speed up moving car intervals for next round.
-*Attempt using canvas to add aesthetics to the board.
-*Add audio to increase engagement.
+* If user wins, speed up moving car intervals for next round.
+* Attempt using canvas to add aesthetics to the board.
+* Add audio to increase engagement.
 
 ## Potential Roadblocks 
 * Looping the motion of moving obstacles on the board correctly.
