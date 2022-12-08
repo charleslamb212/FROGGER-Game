@@ -1,9 +1,6 @@
-# FROGGER!
-  Here is an attempt at re-creating a classic video game from the #80's for nostalgic purposes! Like so many others, I spent long periods of time playing this game which was simple in theory but presented many challenges.
-  Frogger, is simply trying to get back to his Lily pad home which lies across a stretch of busy highway and a body of water. The goal is to maneuver him safely back home without getting hit by a car (!). Once you've crossed the highway, Frogger's home awaits across a river.  Hop across floating logs, and turtles, but make haste in doing so, because even though our main character is an amphibian, he will lose his life and you will lose the game should you let him drop into the water. 
-The rules of this game are simple: do not let the frogger perish in either of these environments.  Avoid contact with any moving object other than a turtle that is not submerged in water.  You get three lives (frogs). Every step forward is 10 points. You will have an alotted time of 30 seconds per turn to completethe course or you lose that turn (life).
-
-
+# FROGGER
+  Here is an attempt at re-creating a classic video game from the #80's for nostalgic purposes! Like so many others, I spent long periods of time playing this game which was simple in theory but presented a few challenges.
+  Frogger, is simply trying to get back to his Lily pad home which lies across a stretch of busy highway and a body of water. The goal is to maneuver him safely back home without getting hit by a car (!). Once you've crossed the highway, Frogger's home awaits across a river.  Hop across floating logs, but make haste in doing so, because even though our main character is an amphibian, he will lose his life and you will lose the game should you let him drop into the water. Every turn is 50 seconds or its automatic game over and you lose.
  It is a one player game against the computer in that the cars and logs and turtles will be constantly flowing across the screen.
 The user will hit the arrow keys to maneuver Frogger across the game board.
 The game will signal a win when lilypads are reached, and will signal a loss if they get hit by an obstacle or fall in the water.
